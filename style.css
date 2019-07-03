@@ -1,0 +1,254 @@
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+*,
+*:before,
+*:after
+{
+    box-sizing: border-box;
+}
+
+header {
+
+    background-color: rgba(0,0,0,.8);
+    width: 100%;
+    min-height: 8vh;
+    max-height: 25vh;
+    height: max-content;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+    position: fixed;
+    font-size: 1.4em;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    opacity: 0.8;
+    font-family: "Oswald", sans-serif;
+    margin: 0 10px;
+}
+
+.menu {
+    margin-left: 5px;
+}
+
+.navigation {
+    margin-right: 5px;
+}
+
+
+.main-img {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    background-image: url(https://avatars.mds.yandex.net/get-pdb/1055791/ea90fb67-c1ae-4cba-ace5-49d38132e35e/s1200);
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+    padding: 0;
+    margin: 0;
+}
+
+
+.main-img__name {
+    position: center;
+    font-family: 'Oswald', 'Dosis', sans-serif;
+    text-decoration: none;
+    font-size: 3rem;
+    color: rgba(255,255,255,.85);
+    border-radius: 20px;
+    border: 0;
+    background-color: rgba(0,0,0,.85);
+    box-shadow: 0 0 0 3px rgba(0,0,0,.5) inset, 0 0 0 4px white inset;
+    padding: 10px 70px;
+    letter-spacing: 0.15rem;
+}
+
+section {
+    width: 100vw;
+    height: 115vh;
+}
+
+
+
+/* grapefruit section */
+.grapefruit__facade {
+    background-color: red;
+    background-image: url(https://img-s3.onedio.com/id-5adda3b161cb6d18168d523f/rev-0/raw/s-e81e6d1e7d33f047e08a3edd181a53ec581a4c4a.jpg);
+    width: 100vw;
+    height: 115vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-size: cover;
+}
+
+
+.grids {
+    display: grid;
+    grid-template-columns: 3fr 1.5fr;
+    grid-gap: 5em;
+    grid-auto-rows: minmax(120px, auto);
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+.grids div {
+    font-family: 'Oswald', sans-serif;
+    background-color: rgba(0,0,0,.85);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    color: red;
+    border-radius: 20px;
+    border: 2px solid #000000;
+}
+
+.m1 {
+    background-image: url(https://avatars.mds.yandex.net/get-pdb/2015833/bbef4809-c589-4a53-a628-118848933c5e/s1200);
+    background-size: 100%;
+    justify-content: center;
+}
+
+.m2 {
+    background-image: url(https://avatars.mds.yandex.net/get-pdb/1960335/8de12920-ceb5-437b-865c-981332c470bf/s1200);
+    background-size: 100%;
+    justify-content: center;
+}
+
+.m3 {
+    background-image: url(https://avatars.mds.yandex.net/get-pdb/2062405/077ddea2-e91a-4452-9f3c-7123dc459c0b/s1200);
+    background-size: 100%;
+    justify-content: center;
+}
+
+.m4 {
+    background-image: url(https://avatars.mds.yandex.net/get-pdb/1861353/2495e379-7fa7-48eb-86de-01011bd1d5bc/s1200);
+    background-size: 100%;
+    justify-content: center;
+}
+
+.m5 {
+    background-image: url(https://avatars.mds.yandex.net/get-pdb/1945646/01e4fb4c-0378-4647-b6ca-9ba63da098fc/s1200);
+    background-size: 100%;
+    justify-content: center;
+}
+
+.m6 {
+    background-image: url(https://avatars.mds.yandex.net/get-pdb/1667414/c83bd42c-9655-4b08-8bbd-c7a8c2e97d70/s1200);
+    background-size: 100%;
+    justify-content: center;
+}
+
+
+
+/* orange section */
+.orange__facade {
+    background-color: orange;
+    background-image: url(https://wdb.space/media/2018-7-29/r5C1mtlk_h.jpg);
+    width: 100vw;
+    height: 115vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-size: cover;
+}
+
+
+footer {
+    background-color: rgba(252,255,255,.9);
+    width: 100%;
+    min-height: 8vh;
+    max-height: 25vh;
+    height: max-content;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin:0;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+}
+
+.aside {
+    margin: 10%;
+    grid-area: aside;
+    justify-items: end;
+    justify-content: end;
+    display: grid;
+    grid-template-areas:
+            "text"
+            "button"
+            "footer";
+    grid-row-gap: 60px;
+    background-size: 100% 100%;
+    border-radius: 25%;
+    background-image: url("https://luckclub.ru/images/luckclub/2018/04/1_5255183a0a43a5255183a0a479.jpg");
+
+}
+
+
+
+
+.aside_text {
+    grid-area: text;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2em;
+    color: red;
+    letter-spacing: 0.2rem;
+}
+
+button {
+    display: inline-block;
+    color: black;
+    font-size: 125%;
+    font-weight: 700;
+    text-decoration: none;
+    user-select: none;
+    padding: .25em .5em;
+    outline: none;
+    border: 1px solid rgb(250,172,17);
+    border-radius: 7px;
+    background: rgb(255,212,3) linear-gradient(rgb(255,212,3), rgb(248,157,23));
+    box-shadow: inset 0 -2px 1px rgba(0,0,0,0), inset 0 1px 2px rgba(0,0,0,0), inset 0 0 0 60px rgba(255,255,0,0);
+    transition: box-shadow .2s, border-color .2s;
+}
+button:hover {
+    box-shadow: inset 0 -1px 1px rgba(0,0,0,0), inset 0 1px 2px rgba(0,0,0,0), inset 0 0 0 60px rgba(255,255,0,.5);
+}
+button:active {
+    padding: calc(.25em + 1px) .5em calc(.25em - 1px);
+    border-color: rgba(177, 159, 0, 1);
+    box-shadow: inset 0 -1px 1px rgba(0, 0, 0, .1), inset 0 1px 2px rgba(0, 0, 0, .3), inset 0 0 0 60px rgba(255, 255, 0, .45);
+}
+
+
+footer a {
+    letter-spacing: 0.1rem;
+    font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+    font-size: 1.25rem;
+    color: black;
+    margin: 0 10px;
+}
+
+
